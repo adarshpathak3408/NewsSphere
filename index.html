@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsSphere | Online News Website</title>
+    <link rel="icon" href="assets/title-logo.jpeg" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <nav id="full-nav" class="flex-content">
+        <div class="nav-group container-content flex-content">
+            <a href="#" class="main-logo" onclick="reload()">
+                <img src="assets/main-logo.png" alt="Organization Logo">
+            </a>
+
+            <div id="nav-list" class="nav-links">
+                <ul class="flex-content">
+                    <li class="nav-items" id="latest-tech" onclick="onNavItemClick('latest-tech')">Technology</li>
+                    <li class="nav-items" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="nav-items" id="india" onclick="onNavItemClick('india')">India</li>
+                    <li class="nav-items" id="defence" onclick="onNavItemClick('defence')">Defence</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex-content">
+
+                <input type="text" id="search-input" class="search-input" placeholder="e.g. Indian Army">
+                <span id="clear-search" class="clear-search-icon">&#x2715;</span>
+                <button id="search-btn" class="search-btn">Search</button>
+
+            </div>
+
+            <div id="dark-mode-toggle">
+                <i class="fa-solid fa-2x fa-moon"></i>
+            </div>
+
+        </div>
+
+        <div id="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+    </nav>
+
+    <main class="flex-content">
+        <div id="cards-container" class="cards-container flex-content container-content">
+
+        </div>
+    </main>
+
+    <template id="card-template">
+        <div id="full-cards" class="card-look">
+            <div class="card-heading">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-pic">
+            </div>
+
+            <div id="card-inside" class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source"> Tech Innovate 25/08/2023 </h6>
+                <p class="news-details" id="news-details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ab nemo eaque provident,
+                    voluptates neque. Pariatur quasi itaque cumque aut?
+                </p>
+            </div>
+        </div>
+    </template>
+
+
+    </div id="footer-details">
+    <footer> Developed By - &nbsp; Adarshkumar Pathak &#x2B50; </footer>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/38986718bd.js" crossorigin="anonymous"></script>
+
+</html>
